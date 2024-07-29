@@ -1,0 +1,46 @@
+<html>
+<head>
+<script>
+ function sum()
+ {
+   var a,b,c,d,e,f,g,h,i,sum;
+a=Number(document.getElementById("t1").value);
+b=Number(document.getElementById("t2").value);
+c=a*b;
+d=Number(document.getElementById("t3").value);
+e=Number(document.getElementById("t4").value);
+f=d*e;
+g=Number(document.getElementById("t5").value);
+h=Number(document.getElementById("t6").value);
+i=g*h;
+sum=c+f+i;
+document.getElementById("t7").value=sum;
+}
+</script>
+</head>
+<body>
+<table border="2">
+<tr>
+<th>Item</th>
+<th>Quality</th>
+<th>Price</th>
+</tr>
+<td>Vanilla</td>
+<td><input type="text" value="" id="t1"></td>
+<td><input type="text" value="" id="t2"></td>
+</tr>
+<tr>
+<td>tea</td>
+<td><input type="text" value="" id="t3"></td>
+<td><input type="text" value="" id="t4"></td>
+</tr>
+<tr>
+<td>coffee</td>
+<td><input type="text" value="" id="t5"></td>
+<td><input type="text" value="" id="t6"></td>
+</tr>
+</table>
+<input type="button" value="total" onclick="sum();">
+<input type="text" id="t7">
+</body>
+</html>
